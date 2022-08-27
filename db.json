@@ -1,0 +1,16 @@
+{
+  "foods": [
+    {
+      "name": "lunch",
+      "protein": "25",
+      "energy": "2500",
+      "id": 1
+    },
+    {
+      "name": "dinner",
+      "protein": "40",
+      "energy": "2500",
+      "id": 2
+    }
+  ]
+}

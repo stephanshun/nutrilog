@@ -4,8 +4,8 @@ import Food from './Food'
 const Foods = ({ foods, onDelete }) => {
     return (
         <>
-            {foods.map((food) => (
-                <Food key={food.id} food={food} 
+            {foods.map((food, index) => (
+                <Food key={index} food={food} 
                 onDelete={onDelete} />
             ))}
         </>
