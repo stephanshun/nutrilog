@@ -21,7 +21,7 @@ const App = () => {
 
   // Fetch Tasks
   const fetchFoods = async () => {
-    const res = await fetch('http://localhost:5000/foods')
+    const res = await fetch('https://nutrilog.vercel.app:5000/foods')
     const data = await res.json()
 
     return data
@@ -31,7 +31,7 @@ const App = () => {
 
   // Add Food
   const addFood = async (food) => {
-    const res = await fetch('http://localhost:5000/foods', {
+    const res = await fetch('https://nutrilog.vercel.app:5000/foods', {
       method: 'POST',
       headers: {
         'Content-type': 'application/json'
@@ -50,7 +50,7 @@ const App = () => {
 
   // Delete Food
   const deleteFood = async (id) => {
-    await fetch(`http://localhost:5000/foods/${id}`, {
+    await fetch(`https://nutrilog.vercel.app:5000/foods/${id}`, {
       method: 'DELETE'
     })
 
